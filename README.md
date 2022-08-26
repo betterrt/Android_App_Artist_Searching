@@ -8,5 +8,11 @@ will be shown. Artworks are also clickable cards, which will show the user the c
 
 # Features
 1.The app has a favorite function, which means the user can add artists into favorite list and explore them directly by clicking their name on the homepage next time.
-2.The back end is developed with express framework using Node.js.
-3.Also use some third party libraries like Glide and Volley.
+
+2.There is also a current date time and a link to artsy website on the App's homepage.
+
+3.The App has a welcoming screen. 
+
+4.The back end is developed with express framework using Node.js.
+
+5.Use some third party libraries like Glide and Volley.
