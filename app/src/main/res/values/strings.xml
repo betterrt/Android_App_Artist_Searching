@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ArtistSearch</string>
+    <string name="no_result">No Result Found</string>
+    <string name="no_artwork">No Artwork Available</string>
+    <string name="no_category">No Category Available</string>
+    <string name="details">DETAILS</string>
+    <string name="artwork">ARTWORK</string>
+    <string name="name">Name</string>
+    <string name="nationality">Nationality</string>
+    <string name="birthday">Birthday</string>
+    <string name="deathday">Deathday</string>
+    <string name="biography">Biography</string>
+    <string name="category">Category</string>
+    <string name="description">Description</string>
+    <string name="loading">loading...</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="7dp"
+            android:paddingBottom="10dp"
+            android:background="@color/favorite_background">
+
+            <TextView
+                android:id="@+id/favorite_name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="15dp"
+                android:text="Name"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_black"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/favorite_nationality"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="nationality"
+                android:textColor="@color/artsy_link"
+                app:layout_constraintTop_toBottomOf="@+id/favorite_name"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/favorite_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1881"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:textColor="@color/text_black"
+                app:layout_constraintStart_toEndOf="@+id/favorite_name"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"/>
+
+            <ImageButton
+                android:id="@+id/favorite_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_right"
+                android:background="#00FFFFFF"
+                android:tag=""
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/favorite_name"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="50dp"
+                android:onClick="toFavorite"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/favorite_bolder_gery"
+            app:layout_constraintBottom_toBottomOf="@+id/favorite_text_view"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

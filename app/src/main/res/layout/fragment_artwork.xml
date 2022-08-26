@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragmentArtwork"
+    android:background="@color/app_background_grey">
+
+    <TextView
+        android:id="@+id/text_no_artwork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_artwork"
+        android:textColor="@color/no_result_grey"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:background="@color/search_hint"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/my_third_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/artwork_item" />
+    </ScrollView>
+
+</LinearLayout>
