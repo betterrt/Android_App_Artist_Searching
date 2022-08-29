@@ -1,5 +1,7 @@
 # Android_App_Artist_Searching
 
+This is a test
+
 ## Objective
 
 The objective is to build up a good-looking Android App that enables user to search for artists by name and displays the results       
